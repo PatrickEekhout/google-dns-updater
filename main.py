@@ -52,7 +52,7 @@ def main(request):
     
     logging.info("Update request started.")
 
-    request_args = request.get_json(silent=True)
+    request_args = request.args
     
     # Assign our parameters
     if request_args:
